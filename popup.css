@@ -1,4 +1,8 @@
-h1 img {
+#texts {
+    font-size: 15px;
+}
+
+#image img {
     width: 30px;
     height: 30px;
 }

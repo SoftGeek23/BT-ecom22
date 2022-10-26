@@ -1,9 +1,4 @@
-.header img {
-    float: left;
+h1 img {
     width: 30px;
     height: 30px;
-}
-
-.header h1 {
-    float: left;
 }

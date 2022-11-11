@@ -1,0 +1,4 @@
+/*
+File will be used for running in the background
+to detect shopping website and grab the name of the product.
+*/

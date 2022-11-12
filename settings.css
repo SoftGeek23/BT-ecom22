@@ -2,7 +2,7 @@
     clear: right;
     border: 10px hidden;
 }
-input {
+.zipCode {
     background-color: transparent;
     border: white;
 }

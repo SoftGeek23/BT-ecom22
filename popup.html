@@ -20,9 +20,11 @@
         <div style="float:right;">
             <img src="/images/icons/settings.png"></a>
         </div>
-    </div>
-    <div id="product" style="clear: both;">
-        <p>search</p>
+    </div class="container">
+        <form action=getSearchResults() method="get"  class="search-bar" target="_blank">
+            <input type="text" placeholder="search any thing" name="q">
+            <button type="submit">  <i class="getSearchResults"></i></button>
+        </form>
     </div>
     <div id="product_image">
         <img src="/images/macbook.jpeg"/>

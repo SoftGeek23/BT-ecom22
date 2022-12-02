@@ -5,35 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Downloaded fonts pasted here-->
-    <title>Home Page</title>
+    <title>Main Page</title>
     <link rel="stylesheet" href="popup.css">
+    <script src="popup.js"></script>
 </head>
 <body style="background-color:rgb(240,240,240)">
-    <div id="header">
-
-        <div style="float:left;">
-            <img src="/images/icons/logo.png">
-        </div>
-        <div style ="float:right;">
-            <img src="/images/icons/X icon 64px.png">
-        </div>
-        <div style="float:right;">
-            <img src="/images/icons/settings.png"></a>
-        </div>
+    <div id="logo" style="float:left;">
+        <img src="/images/icons/logo.png"/>
     </div>
-    <div id="product" style="clear: both;">
+    <div id="settings" style="float:right;margin-right:35px;">
+        <img 
+        src="/images/icons/settings.png"/>
+    </div>
+        <button 
+        id="close">
+            &times;
+        </button>
+    </div>
+    <div id="product" style="clear:both;">
         <p>search</p>
     </div>
     <div id="product_image">
-        <img src="/images/macbook.jpeg"/>
+        <img src=""/>
     </div>
-    <div id="marketplace_picker">
-        <div>
-            <img src="/images/companies/amazon.png">
+    <div class="marketplace_picker">
+        <div class="company">
+            <img src="/images/companies/amazon.png"/>
+        </div>
+        <div class="company"> 
+            <img src="/images/companies/target.png"/>
+        </div>
+        <div class ="company">
+            <img src="images/companies/walmart.png"/>
+        </div>
+        <div class="company">
+            <img src="images/companies/ebay.png"/>
         </div>
     </div>
-
-    
+    <div class ="stats">
+        <div id="price">
+            Price
+        </div>
+        <div id="shipping">
+            Shipping
+        </div>
+        <div id="reviews">
+            reviews
+        </div>
+    </div>
 </div>
 </body>
 </html>

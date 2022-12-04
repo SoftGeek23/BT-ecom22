@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     const settings = document.querySelector('#settings');
     settings.addEventListener('click', (e) => {
+        window.open('settings.html');
     })
     const companies = document.querySelectorAll('.company');
     companies.forEach(company => {

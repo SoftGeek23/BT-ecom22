@@ -29,8 +29,6 @@
     background-color: transparent;
     border: 0;
     font-size: 25px;
-    width: 25px;
-    height: 25px;
     line-height: 25px;
     cursor: pointer;
     position: absolute;
@@ -47,8 +45,8 @@
 
 .container{
     background-image: linear-gradient(rgb(200, 194, 218), rgb(232, 229, 238));
-    background-position:center;
-    background-size:cover;
+    background-position: center;
+    background-size: cover;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -62,10 +60,6 @@
     align-items: center;
 }
 
-.search-bar form {
-    box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
-}
-
 .search-bar button{
     background-color: rgb(0,90,140);
     border: 0;
@@ -76,8 +70,8 @@
     position: absolute;
     margin-left: 140px;
     margin-right: 20px;
-    height: 40px;
-    width: 45px;
+    height: 30px;
+    width: 40px;
     transition: all 0.05s ease-in;
 }
 
@@ -92,18 +86,16 @@
     outline: transparent;
     background: white;
     padding: 0 10px;
-    font-size: 16px;
-    line-height: 40px;
-    color: #000;
+    font-size: 14px;
+    line-height: 30px;
     font-weight: 500;
     border-radius: 20px;
 }
     
 .search-bar img{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin-right: 5px;
-    margin-left: 4px;
     transform: scaleX(-1);
 }
 
@@ -116,6 +108,7 @@
     border-style: hidden;
     border-radius: 10px;
     background-color: rgb(0,90,140);
+    margin: 0px 5px 0px 5px;
     box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
     display: flex;
 }
@@ -145,37 +138,35 @@
     border-radius: 10px
 }
 
-.stats div {
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box>* {
+    flex: 50px;
+}
+
+.gray_border {
     background-color: #D9D9D9;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
     border-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
 }
 
-.stats p {
+.white_border {
     background-color: white;
     border-radius: 10px;
-}
-
-#price p {
-    float: left;
-    position: absolute;
-}
-
-#shipping {
-    float: right;
-}
-
-#reviews {
-    clear: both;
     text-align: center;
+    font-size: 15px;
 }
 
-#reviews {
-    background-color: white;
+.white_border p {
+    margin: 0;
 }
 
-#reviews img {
+.white_border img {
     width: 20px;
     height: 20px;
 }

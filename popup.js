@@ -32,14 +32,18 @@ document.addEventListener('DOMContentLoaded', function () {
             // Grabs company ID to change values for each tab
             const companyId = company.getElementsByTagName('img')[0];
             var index = 0;
+            const cheapest = document.querySelector('#cheapest');
+            cheapest.style.color = '#FFFFFF';
             if (companyId.id == 'amazon') 
                 index = 0;
             else if (companyId.id == 'target') 
                 index = 1;
             else if (companyId.id == 'walmart')
                 index = 2;
-            else 
+            else {
                 index = 3;
+                cheapest.style.color = '#005A8C';
+            }
             var  dateModifier = companyModifiers[index];
             // Handles date changing
             const date = new Date();

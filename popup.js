@@ -6,17 +6,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const settings = document.querySelector('#settings');
     settings.addEventListener('click', (e) => {
     })
-
+    const search = document.querySelector('#search');
+    search.addEventListener('click', (e) => {
+        hider = document.querySelector('#hide');
+        hider.removeAttribute('id' ,'hide');
+    })
     var link = "https://www.amazon.com/Apple-AirPods-3rd-Generation-Renewed/dp/B09M94KXPN/ref=sr_1_4?crid=3R6FEV5ND7N6&keywords=apple+airpods+3rd+generation&qid=1670192526&sprefix=apple+airpods+%2Caps%2C102&sr=8-4";
     const image = document.querySelector('#product_image');
     image.addEventListener('click', (e) => {
         window.open(link);
     })
-
-    const companyModifiers = [2,3,7,7];
-    const companyPrices = [100.80,119.98,119.99,65.99];
-    const reviewNums = [0,10031,11912,568]
-    const reviewStars = [0,4,5,3];
+    const companyModifiers = [3,3,7,7];
+    const companyPrices = [89.99,119.98,119.99,65.99];
+    const reviewNums = [578,10031,11912,568]
+    const reviewStars = [4,4,5,3];
     const companies = document.querySelectorAll('.company');
     companies.forEach(company => {
         company.addEventListener('click', function toggleHighlight(event) {
@@ -25,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (company.id == 'on')
                     company.removeAttribute('id' , 'on');
             })
-
             company.setAttribute('id', 'on');
             // Grabs company ID to change values for each tab
             const companyId = company.getElementsByTagName('img')[0];
@@ -36,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 index = 1;
             else if (companyId.id == 'walmart')
                 index = 2;
-            else
+            else 
                 index = 3;
             var  dateModifier = companyModifiers[index];
             // Handles date changing

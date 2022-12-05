@@ -1,75 +1,28 @@
-<DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Downloaded fonts pasted here-->
-    <title>Settings Page</title>
-    <link rel="stylesheet" href="popup.css">
-    <script src="settings.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="settings.css">
+  <script src="settings.js" defer></script>
+  <title>Document</title>
 </head>
-<body>
-    <div class="back">
-        <button 
-        id="close">
-        <a href = "popup.html">
-            &LeftArrow;
-        </button>
-        </a>
-        </div>          
-
-</div class="Zip">
-<form action=getSearchResults() method="get" class="search-bar" target="_blank">
-    <input type="text" placeholder="search" name="q">
-        <form action="press">
-            <button style = "float:right;" type="submit">  <i class="getSearchResults"></i>
-                <img src="/images/icons/search icon.png">
-            </button>
-        </form>
-    </input>
-    Zip Code:
-</form>
-
-</div>
-<h3>Drag and drop items on right for ranking</h3>
-<div class='container'>
-  
-<div class="source-container">
- <div class='source'>
-   <div class='item'>
-    <p>Item 1</p>
-   </div>
- </div>
-  
-  <div class='source'>
-   <div class='item'>
-    <p>Item 2</p>
-   </div>
- </div>
-  
-  <div class='source'>
-   <div class='item'>
-    <p>Item 3</p>
-   </div>
- </div>
-
- </div>
- 
-</div>
-  <div class='move-back'>
+<body style="background-color:rgb(240,240,240)">
+    <div id="logo" style="float:left;">
+        <img src="/images/icons/logo.png"/>
+    </div>
+    <div id="backbutton" style="float:right">
+        <a href = "popup.html"><img src="/images/icons/back_arrow.png"/></a>
+    </div>
+    <div class="holder">
+  <div class="container" style = "float: bottom">
+    Rank the following in order of your
+    preference: 
+    <p class="draggable" draggable="true">Price 
+    </p>
+    <p class="draggable" draggable="true">Shipping</p>
+    <p class="draggable" draggable="true">Reviews</p>
   </div>
-<div class='destination-container'>
-  <div class="destination" id="dest1">
-    <span>1</span>
-  </div>
-  <div class="destination" id="dest2">
-    <span>2</span>
-  </div>
-  <div class="destination" id="dest3">
-    <span>3</span>
-  
-</div>
-  
-</div>
 </body>
 </html>

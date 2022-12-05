@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+  }
+
+  #logo img {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+  #backbutton img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;    
+}
+
+#backbutton img:hover {
+    opacity: 0.6;
+}
+  .draggable {
+    width: 133px;
+    padding: 1rem;
+    background-color: white;
+    cursor: move;
+    text-align: center;
+    border-radius: 40px;
+    vertical-align: center;
+    
+  }
+.holder{
+    text-align: center;
+    padding-top: 35px;
+    margin: 20px;
+}
+  .draggable.dragging {
+    opacity: .5;
+  }

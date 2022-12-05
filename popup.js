@@ -11,15 +11,15 @@ document.addEventListener('DOMContentLoaded', function () {
         hider = document.querySelector('#hide');
         hider.removeAttribute('id' ,'hide');
     })
-    var link = "https://www.amazon.com/Apple-AirPods-3rd-Generation-Renewed/dp/B09M94KXPN/ref=sr_1_4?crid=3R6FEV5ND7N6&keywords=apple+airpods+3rd+generation&qid=1670192526&sprefix=apple+airpods+%2Caps%2C102&sr=8-4";
+    var link = "https://www.amazon.com/Apple-AirPods-Charging-Latest-Model/dp/B07PXGQC1Q/ref=sr_1_4?keywords=airpods&qid=1670214027&sr=8-4";
     const image = document.querySelector('#product_image');
     image.addEventListener('click', (e) => {
         window.open(link);
     })
-    const companyModifiers = [3,3,7,7];
-    const companyPrices = [89.99,119.98,119.99,65.99];
-    const reviewNums = [578,10031,11912,568]
-    const reviewStars = [4,4,5,3];
+    const companyModifiers = [16,3,7,7];
+    const companyPrices = [119.0,119.98,119.99,65.99];
+    const reviewNums = [548773,10031,11912,568]
+    const reviewStars = [5,4,5,3];
     const companies = document.querySelectorAll('.company');
     companies.forEach(company => {
         company.addEventListener('click', function toggleHighlight(event) {
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var  dateModifier = companyModifiers[index];
             // Handles date changing
             const date = new Date();
-            const daysOfTheWeek = ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+            const daysOfTheWeek = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
             date.setDate(date.getDate() + dateModifier);
             const day = document.querySelector('#day');
             day.textContent = daysOfTheWeek[date.getDay()];
